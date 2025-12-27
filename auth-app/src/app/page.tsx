@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/dist/client/link";
 
 export default function Home() {
   return (
@@ -11,6 +13,9 @@ export default function Home() {
           <h1 className="max-w-xs text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Sign Up</h1>
         </div>
 
+        <Button asChild size="lg" >
+          <Link href = "auth/login">sign in / sign up</Link>
+        </Button>
         <form className="w-full max-w-3xl">
           <div className="flex w-full flex-col gap-4 text-left">
             <input
@@ -67,7 +72,8 @@ export default function Home() {
             Github
           </a>
 
-          
+
+
         </div>
       </main>
     </div>
